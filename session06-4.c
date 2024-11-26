@@ -32,7 +32,7 @@ int main(){
 	if(check==1){
 		printf("phuong trinh co 2 nghiem la %f va %f",x1,x2);
 	}else if(check==2){
-		printf("phuong trinh co 1 nguiem la %f",x1);
+		printf("phuong trinh co 1 nghiem la %f",x1);
 	}else if(check==3){
 		printf("phuong trinh vo so nghiem");
 	}else{
