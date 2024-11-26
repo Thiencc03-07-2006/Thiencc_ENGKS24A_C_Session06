@@ -19,6 +19,6 @@ int main(){
 	if(num5%2==0){
 		count++;
 	}
-	printf("co %d so chan",count);
+	printf("co %d so chan va %d so le",count,5-count);
 	return 0;
 } 
