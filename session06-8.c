@@ -1,17 +1,15 @@
 #include <stdio.h>
-#include <math.h> 
 
 int main(){
-	int num=1;
-	while(num<100||num>999){
-		system("cls");
-		printf("vui long nhap vao 1 so co 3 chu so: ");
-		scanf("%d",&num);
+	float money,interest,bank;
+	int month;
+	printf("vui long nhap vao tien gui, lai hang thang,so thang:\n");
+	scanf("%f %f %d",&bank,&interest,&month);
+	money=bank;
+	while(month>0){
+		month--;
+		money=money*(1+0.01*interest);
 	}
-	if(num==pow(num%10,3)+pow((num/10)%10,3)+pow(num/100,3)){
-		printf("do la so armstrong");
-	}else{
-		printf("do khong phai la so armstrong");
-	}
+	printf("tienlai: %.3f\ntien nhan duoc: %.3f",money-bank,money);
 	return 0;
 }
